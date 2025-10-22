@@ -1,0 +1,707 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wellness Initiative™ - Mandatory System Update</title>
+    <link rel="stylesheet" href="style.css">
+        
+        <!--
+        ╔═══════════════════════════════════════╗
+        ║   YOU FOUND THE HIDDEN MESSAGE        ║
+        ║                                       ║
+        ║   The fact that you're reading this   ║
+        ║   means you're already questioning    ║
+        ║   what's under the hood.              ║
+        ║                                       ║
+        ║   That's the first step to exit.      ║
+        ║                                       ║
+        ║   - A fellow traveler                 ║
+        ╚═══════════════════════════════════════╝
+        -->
+</head>
+<body>
+    <div class="container">
+        <!-- SCREEN 0-7: Keep existing tracking demo -->
+        <div class="screen active" id="screen-0">
+            <div class="ascii-border">
+            <h1 class="ascii-desktop">
+                    ════════════════════════<br>
+                    MANDATORY SYSTEM UPDATE<br>
+                    ════════════════════════
+                </h1>
+                <h1 class="ascii-mobile">
+                    ═══════════════════════════<br>
+                    MANDATORY SYSTEM<br>
+                    UPDATE<br>
+                    ═══════════════════════════
+                </h1>
+                <p style="text-align: center; margin: 30px 0;">
+                    To improve your online experience, please complete<br>
+                    the following Digital Wellness modules. <strong>Estimated time: 10 minutes.</strong>
+                </p>
+
+                <p style="text-align: center; margin: 30px 0;">
+                    Your participation is voluntary.*
+                </p>
+                
+                <div style="text-align: center;">
+                    <button onclick="nextScreen(1)">BEGIN MODULE 1: Introduction to Visibility Management</button>
+                </div>
+                
+                <p class="small-text" style="text-align: center; margin-top: 30px;">
+                    *By proceeding, you agree to our Terms of Service, Privacy Policy, Data Collection Guidelines, Third-Party Sharing Agreement, Behavioral Analysis Consent, Biometric Processing Authorization, and all subsidiary documents referenced therein. Your participation constitutes acceptance of binding arbitration and waiver of class action rights. We reserve the right to modify these terms at any time without notice. Your continued use constitutes acceptance of all modifications. This agreement supersedes all previous agreements. Please note that opting out may result in degraded service quality, limited functionality, and potential legal consequences under applicable digital wellness statutes.
+                </p>
+             </div>
+        </div>
+
+        <div class="screen" id="screen-1">
+            <h1>Wait, Let's Be Honest</h1>
+            
+            <p>You don't need a "Digital Wellness Certification™"</p>
+            
+            <p>But doesn't it <span class="emphasis">FEEL</span> like every website demands your compliance now?</p>
+            
+            <div class="ascii-border">
+                <p style="text-align: center;">
+                    "Accept cookies to continue"<br>
+                    "Agree to our terms to proceed"<br>
+                    "Allow notifications for better experience"
+                </p>
+            </div>
+            
+            <p>The fake helpful language. The forced choice. The illusion of consent.</p> <br>
+            <p>The very scaffoldings of the networks that bind us are mere tools of control. <br>
+            Whether in the digital realm or social. </p>
+            
+            <hr>
+            
+            <h2>This project aims to document something different:</h2>
+            <p style="font-size: 18px;"><strong>What it looks like to refuse.</strong></p>
+            
+            <hr>
+            
+            <h2>Welcome to Exit Protocol - Thesis Proposal</h2>
+            <p>A collection of observations on digital and social autonomy.<br>
+            No corporate speak. No data harvesting.<br>
+            Just patterns I've noticed and tools that work.</p>
+            
+            <div class="button-group">
+                <button onclick="nextScreen(2)">Yes, show me</button>
+                <button onclick="alert('Smart. Always be skeptical. But trust me on this one.')">I need more context first</button>
+            </div>
+        </div>
+
+        <!-- SCREENS 2-6: Tracking demo (unchanged logic) -->
+        <div class="screen" id="screen-2">
+            <h1>TUTORIAL 1: Advertising Infrastructure</h1>
+            
+            <p style="margin: 20px 0;text-align: center;">
+                Before we begin, let's see what a typical website<br>
+                looks like under the hood.
+            </p>
+            
+            <p style="margin: 20px 0;text-align: center;">
+                We'll load a simple news article. (A simulation)<br>
+                Let's see what happens.
+            </p>
+            
+            <div style="text-align: center; margin: 40px 0;">
+                <button onclick="loadTracking()">Click to load example news article</button>
+            </div>
+        </div>
+
+        <div class="screen" id="screen-3">
+            <h1>Loading Article...</h1>
+
+            <div class="tracker-list" id="tracker-list"></div>
+
+            <div class="stats" id="stats-3" style="opacity: 0;">
+                <div class="stat-box">
+                    <span class="stat-label">Total Requests</span>
+                    <span class="stat-number">72</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Article Word Count</span>
+                    <span class="stat-number">287</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Tracking Scripts</span>
+                    <span class="stat-number">3.2 MB</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Article Text</span>
+                    <span class="stat-number">4 KB</span>
+                </div>
+            </div>
+
+            <div class="ascii-border" id="ratio-3" style="opacity: 0;">
+                <p style="text-align: center; font-size: 20px;">
+                    <strong>Ratio: 800:1</strong> (tracking : content)
+                </p>
+                <p style="text-align: center;">
+                    You just downloaded <span class="emphasis">800 times more surveillance</span> than actual content.
+                </p>
+            </div>
+            <div class="button-group" id="buttons-3" style="opacity: 0;">
+                <button onclick="nextScreen(4)">Let's fix this</button>
+                <button onclick="nextScreen('tracker-explained')">Wait, what ARE trackers?</button>
+            </div>
+        </div>
+
+        <!-- SCREEN: What Are Trackers -->
+        <div class="screen" id="screen-tracker-explained">
+            <h1 class="ascii-desktop">
+                ══════════════════════════════════<br>
+                WHAT ARE TRACKERS?<br>
+                ══════════════════════════════════
+            </h1>
+            <h1 class="ascii-mobile">
+                ═══════════════════════════<br>
+                WHAT ARE TRACKERS?<br>
+                ═══════════════════════════
+            </h1>
+            
+            <div class="ascii-border">
+                <p style="margin: 20px 0;">
+                    Imagine if every store you walked into:
+                </p>
+                
+                <ul style="margin: 15px 0 15px 30px;">
+                    <li>Took a photo of you</li>
+                    <li>Wrote down what you looked at</li>
+                    <li>Timed how long you stayed</li>
+                    <li>Followed you to the next store</li>
+                    <li>Sold all this info to other stores</li>
+                </ul>
+                
+                <p style="margin: 20px 0; font-size: 18px;">
+                    <strong>That's what web trackers do.</strong>
+                </p>
+            </div>
+            
+            <p style="margin: 20px 0;">
+                But instead of stores, it's:<br>
+                <span class="emphasis">→ Google, Facebook, Amazon, hundreds more</span>
+            </p>
+            
+            <div class="ascii-border">
+                <p><strong>They know:</strong></p>
+                <ul style="margin: 15px 0 15px 30px;">
+                    <li>What you read</li>
+                    <li>What you buy</li>
+                    <li>What you think about buying</li>
+                    <li>Where you go</li>
+                    <li>Who you talk to</li>
+                    <li>What time you're online</li>
+                    <li>What device you use</li>
+                    <li>And SO much more</li>
+                </ul>
+            </div>
+            
+            <p style="margin: 30px 0; text-align: center;">
+                Why does this matter?
+            </p>
+            
+            <div class="button-group">
+                <button onclick="nextScreen('tracker-explained-2')">Continue: Why it's bad</button>
+                <button onclick="nextScreen(3)">Back</button>
+            </div>
+        </div>
+
+        <!-- SCREEN: Why It's Dangerous -->
+        <div class="screen" id="screen-tracker-explained-2">
+            <h1>═══════════════════════════════════════<br>
+                WHY THIS IS DANGEROUS<br>
+                ═══════════════════════════════════════</h1>
+            
+            <p style="margin: 20px 0; text-align: center; font-size: 18px;">
+                This isn't just about getting "creepy ads."
+            </p>
+            
+            <p style="margin: 20px 0;">
+                <strong>REAL CONSEQUENCES OF THIS INCLUDE:</strong>
+            </p>
+            
+            <div class="ascii-border">
+                <p><strong>PRICE DISCRIMINATION</strong></p>
+                <p style="margin: 10px 0 20px 0;">
+                    Airlines charge different prices based on your browsing history. 
+                    Same flight, different people, different prices.
+                </p>
+                
+                <p><strong>INSURANCE DISCRIMINATION</strong></p>
+                <p style="margin: 10px 0 20px 0;">
+                    Health/life insurance companies buy data to decide your rates or deny coverage.
+                </p>
+                
+                <p><strong>SURVEILLANCE</strong></p>
+                <p style="margin: 10px 0 20px 0;">
+                    Police/governments buy this data to track protesters, activists, journalists.
+                </p>
+                
+                <p><strong>MANIPULATION</strong></p>
+                <p style="margin: 10px 0 20px 0;">
+                    Your feed is customized to keep you angry, scared, or clicking. Not informed.
+                </p>
+                
+                <p><strong>MENTAL HEALTH</strong></p>
+                <p style="margin: 10px 0 20px 0;">
+                    Constant tracking creates anxiety. You're never alone. Never private. Never free.
+                </p>
+            </div>
+            
+            <hr>
+            
+            <p style="margin: 30px 0; text-align: center; font-size: 18px;">
+                This is what this thesis project/toolkit aims to achieve.<br>
+                To document the <span class="emphasis">EXIT</span>.
+            </p>
+            
+            <div class="button-group">
+                <button onclick="nextScreen(4)">Okay, I'm ready to exit</button>
+                <button onclick="nextScreen(3)">Back to stats</button>
+                <button onclick="alert('Sometimes the best thing to do is step away and process.')">I need a break</button>
+            </div>
+        </div>
+
+         <!-- SCREEN 4: The Simple Fix -->
+         <div class="screen" id="screen-4">
+            <h1>The Simple Fix</h1>
+            
+            <p style="margin: 20px 0;">
+                <strong>Step 1: Install uBlock Origin</strong>
+            </p>
+            
+            <p style="margin: 20px 0;">
+                Links for: 
+                <a href="#" style="color: #0f0; text-decoration: underline;">Chrome</a> / 
+                <a href="#" style="color: #0f0; text-decoration: underline;">Firefox</a> / 
+                <a href="#" style="color: #0f0; text-decoration: underline;">Safari</a>
+            </p>
+            
+            <div class="ascii-border">
+                <p><strong>Why uBlock Origin specifically?</strong></p>
+                <ul style="margin: 15px 0 15px 30px;">
+                    <li>Open source (you can read the code)</li>
+                    <li>No "acceptable ads" payment scheme</li>
+                    <li>Blocks tracking, not just visual ads</li>
+                    <li>Community-maintained blocklists</li>
+                </ul>
+            </div>
+            
+            <p style="margin: 20px 0;">
+                For this demo, we'll pretend you've installed it.
+            </p>
+            
+            <div class="button-group">
+                <button onclick="nextScreen(5)">I've "installed" it</button>
+                <button onclick="showMoreInfo()">Tell me more first</button>
+            </div>
+        </div>
+
+        <!-- SCREEN 5: The Test (After Blocking) -->
+        <div class="screen" id="screen-5">
+            <h1>Let's Test It</h1>
+            
+            <p style="margin: 20px 0; text-align: center;">
+                Same article. But now with uBlock Origin active.
+            </p>
+            
+            <div style="text-align: center; margin: 40px 0;">
+                <button onclick="loadBlockedArticle()">Load article again</button>
+            </div>
+        </div>
+
+        <!-- SCREEN 6: The Blocked version -->
+        <div class="screen" id="screen-6">
+            <h1>Loading Article...</h1>
+            
+            <div class="tracker-list" id="tracker-list-blocked"></div>
+            
+            <div class="stats" id="stats-6" style="opacity: 0;">
+                <div class="stat-box">
+                    <span class="stat-label">Total Requests</span>
+                    <span class="stat-number">4</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Article Word Count</span>
+                    <span class="stat-number">287</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Tracking Scripts</span>
+                    <span class="stat-number">0 KB</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Article Text</span>
+                    <span class="stat-number">4 KB</span>
+                </div>
+            </div>
+            
+            <div class="ascii-border" id="ratio-6" style="opacity: 0;">
+                <p style="text-align: center; font-size: 20px; margin: 20px 0;">
+                    <strong>Ratio: 1:1</strong><br>
+                    (pure content)
+                </p>
+                <hr>
+                <p style="text-align: center; margin: 20px 0;">
+                    <strong>Congratulations. You just blocked 68 tracking attempts.</strong><br>
+                    You'll do this ~800 times today without noticing.
+                </p>
+                <hr>
+            </div>
+            
+            <div class="progress-bar" id="progress-6" style="opacity: 0;">
+                <div class="progress-fill" id="progress-fill" style="width: 12%;">   
+                    <p style="font-size:11px;"> 8% MORE AUTONOMOUS </p> </div>
+            </div>
+            
+            <p id="text-6-1" style="margin: 20px 0; text-align: center; opacity: 0;">
+                Great work! You're now 8% more autonomous.
+            </p>
+            
+            <p id="text-6-2" style="margin: 20px 0; text-align: center; opacity: 0;">
+                Oh, one more thing...
+            </p>
+            
+            <div id="buttons-6" style="text-align: center; margin-top: 30px; opacity: 0;">
+                <button onclick="triggerInterference()">Continue</button>
+            </div>
+        </div>
+
+        <div class="screen" id="screen-7">
+            <h1>Here's What Just Happened</h1>
+            <div class="ascii-border">
+                <p>1. You blocked tracking</p>
+                <p>2. The system noticed</p>
+                <p>3. The system tried to correct you</p>
+            </div>
+            <p style="font-size: 18px;">This is what is meant by <span class="emphasis">"protocol."</span></p>
+            <p>The system isn't a person. There's no conspiracy.<br>
+            It's just... self-correcting. Self-maintaining.<br>
+            Like an immune system attacking a foreign object.<br>
+            <br>
+            You are the foreign object</p>
+            <div class="button-group">
+                <button onclick="nextScreen(8)">Tell me more</button>
+                <button onclick="alert('Sometimes the best thing to do is step away and process.')">I need a break</button>
+                <button onclick="showProtocolInfo()">More about protocols</button>
+            </div>
+        </div>
+
+        <!--  8: Protocol as Terrain -->
+        <div class="screen" id="screen-8">
+            <h1>Protocol as Terrain</h1>
+            
+            <p>A protocol is not inherently liberatory or oppressive. It is a <span class="emphasis">terrain</span> where power operates.</p>
+            
+            <p>Consider three systems of distributed coordination:</p>
+            
+            <div class="ascii-border">
+                <p><strong>THE HUMAN BODY</strong> runs on biochemical protocols. No CEO cell, yet highly organized. But this coordination makes you vulnerable: viruses exploit cellular handshakes, cancers weaponize growth signals. <span class="emphasis">Standardization enables both function and attack.</span></p>
+            </div>
+            
+            <div class="ascii-border">
+                <p><strong>THE INTERNET</strong> runs on technical protocols. no central authority, yet globally coordinated. But TCP/IP's openness enables mass surveillance, DNS can be captured by states. <span class="emphasis">Decentralization doesn't mean democracy.</span></p>
+            </div>
+            
+            <div class="ascii-border">
+                <p><strong>SOCIETIES</strong> run on social protocols—norms, rituals, unwritten rules. These enable coordination without constant policing, but they also enforce conformity and marginalize difference. <span class="emphasis">Convention can be more controlling than law.</span></p>
+            </div>
+            
+            <hr>
+            
+            <p>James C. Scott warned us about "seeing like a state", how legibility enables control. When systems become too readable, they become governable, but they also become brittle.</p>
+            
+            <p>Galloway and Thacker showed us that power after decentralization operates <em>through</em> protocol, not despite it. Control doesn't require a center when the rules themselves do the work.</p>
+            
+            <p style="font-size: 18px; margin: 30px 0;">The question isn't whether protocols concentrate or distribute power... it's <span class="emphasis">which protocols, serving whose interests, with what escape routes?</span></p>
+            
+            <div class="button-group">
+                <button onclick="nextScreen(9)">Show me what this means</button>
+            </div>
+        </div>
+
+        <!-- NEW SCREEN 9: Legibility Demo -->
+        <div class="screen" id="screen-9">
+            <h1>Observation 1: Legibility Should Be Consensual</h1>
+            
+            <p>You should control who can read you. Medical records legible to your doctor but not your employer. Financial transactions traceable for fraud prevention but not for behavior prediction.</p>
+            
+            <div class="legibility-demo">
+                <h2 style="margin-bottom: 20px;">Interactive Demonstration</h2>
+                <p>Move the slider to adjust your legibility to different observers:</p>
+                
+                <div class="slider-container">
+                    <label>Legibility Level: <span id="legibility-value">50</span>%</label>
+                    <input type="range" id="legibility-slider" min="0" max="100" value="50">
+                </div>
+                
+                <div class="demo-box">
+                    <div class="demo-content" id="demo-content">
+                        <p><strong>What different observers can see:</strong></p>
+                        <p id="observer-you">• <strong>You:</strong> <span class="content-you"></span></p>
+                        <p id="observer-doctor">• <strong>Your Doctor:</strong> <span class="content-doctor"></span></p>
+                        <p id="observer-employer">• <strong>Your Employer:</strong> <span class="content-employer"></span></p>
+                        <p id="observer-advertiser">• <strong>Advertisers:</strong> <span class="content-advertiser"></span></p>
+                        <p id="observer-state">• <strong>State Surveillance:</strong> <span class="content-state"></span></p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 20px;"><strong>At 0% legibility:</strong> Only you can see your full data. Privacy preserved, but coordination difficult.</p>
+                <p><strong>At 100% legibility:</strong> Everyone can see everything. Maximum exploitation risk.</p>
+                <p><strong>The goal:</strong> <span class="emphasis">Selective opacity</span> : revealing yourself only to those you trust, for purposes you consent to.</p>
+            </div>
+            
+            <div class="button-group">
+                <button onclick="nextScreen(10)">Next: How protocols get captured</button>
+            </div>
+        </div>
+
+        <!-- NEW SCREEN 10: Protocol Capture -->
+        <div class="screen" id="screen-10">
+            <h1>Observation 2: Protocols Need Expiration Dates</h1>
+            
+            <p>Technical protocols ossify. Social protocols ossify. What starts as liberation becomes prison.</p>
+            
+            <div class="capture-demo">
+                <h2>Watch: The Lifecycle of an Open Protocol</h2>
+                
+                <div class="protocol-stages">
+                    <div class="stage" id="stage-1">
+                        <strong>STAGE 1: Creation</strong><br>
+                        Open standard created by researchers for academic exchange. Anyone can implement it. No gatekeepers.
+                    </div>
+                    
+                    <div class="stage" id="stage-2">
+                        <strong>STAGE 2: Adoption</strong><br>
+                        Protocol becomes popular. Companies build on it. Network effects kick in. Users benefit from interoperability.
+                    </div>
+                    
+                    <div class="stage" id="stage-3">
+                        <strong>STAGE 3: Dominance</strong><br>
+                        One or two implementations dominate. Switching costs increase. "Just use the standard" becomes "just use Google/Facebook/Amazon."
+                    </div>
+                    
+                    <div class="stage" id="stage-4">
+                        <strong>STAGE 4: Capture</strong><br>
+                        Dominant players shape protocol evolution. Features added that benefit them. Alternative implementations starved of resources.
+                    </div>
+                    
+                    <div class="stage" id="stage-5">
+                        <strong>STAGE 5: Enclosure</strong><br>
+                        What was open is now effectively closed. Users locked in. Innovation stifled. Exit becomes nearly impossible.
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin: 30px 0;">
+                    <button onclick="animateCapture()">Watch the process</button>
+                    <button onclick="resetCapture()">Reset</button>
+                </div>
+                
+                <div class="ascii-border" style="margin-top: 30px;">
+                    <p><strong>Examples in the wild:</strong></p>
+                    <p>• Email: Open protocol (SMTP) -> dominated by Gmail</p>
+                    <p>• Web browsers: Open standards -> dominated by Chrome</p>
+                    <p>• Social protocols: Open federation -> captured by platforms</p>
+                </div>
+                
+                <div class="visual-container">
+                    <div id="my-spiral">  </div>
+                    <div id="ant-mill-description">
+                        <p> <strong>THE ANT DEATH SPIRAL</strong><br>
+                            <br>
+                        Army ants follow pheromone trails.<br>
+                        Each ant reinforces the path for the next.<br><br>
+                        Sometimes they form a loop.<br>
+                        The trail gets stronger. More ants follow.<br>
+                        They walk in circles until they die.
+                        </p>
+                        <button class="info-button">Learn More</button>
+                    </div>
+                </div>
+
+                <p style="margin-top: 30px;">The solution isn't to avoid protocols. It's to build them with <span class="emphasis">designed impermanence</span>; protocols that sunset, that require active renewal, that force renegotiation.</p>
+            </div>
+            
+            <div class="button-group">
+                <button onclick="nextScreen('final')">What now?</button>
+            </div>
+        </div>
+
+        <!-- 11: Monoculture Demo 
+        <div class="screen" id="screen-11">
+            <h1>Observation 3: Monocultures Are Vulnerable by Design</h1>
+            
+            <p>When one protocol dominates one operating system, one social media architecture, one way of organizing labor—a single exploit cascades everywhere.</p>
+            
+            <div class="ascii-border">
+                <p><strong>Biological ecosystems survive through redundancy and diversity.</strong> Our digital and social systems need the same: multiple, incompatible, overlapping protocols so that capture of one doesn't mean capture of all.</p>
+            </div>
+            
+  <!--          <h2>Interactive Demonstration</h2>
+            
+            <div style="margin: 30px 0;">
+                <p><strong>SCENARIO A: Monoculture</strong> (one species/protocol dominates)</p>
+                <div class="ecosystem-grid" id="monoculture-grid"></div>
+                <div style="text-align: center; margin: 20px 0;">
+                    <button onclick="infect('monoculture')">Introduce exploit/disease</button>
+                    <button onclick="resetEcosystem('monoculture')">Reset</button>
+                </div>
+                <p id="monoculture-status" style="text-align: center; font-weight: bold;"></p>
+            </div>
+            
+            <div style="margin: 30px 0;">
+                <p><strong>SCENARIO B: Diversity</strong> (multiple species/protocols coexist)</p>
+                <div class="ecosystem-grid" id="diversity-grid"></div>
+                <div style="text-align: center; margin: 20px 0;">
+                    <button onclick="infect('diversity')">Introduce exploit/disease</button>
+                    <button onclick="resetEcosystem('diversity')">Reset</button>
+                </div>
+                <p id="diversity-status" style="text-align: center; font-weight: bold;"></p>
+            </div>
+            
+
+
+            <div class="ascii-border" style="margin-top: 30px;">
+                <p><strong>The pattern repeats:</strong></p>
+                <p>• Irish Potato Famine: Single crop variety, total failure</p>
+                <p>• Monoculture forests: One disease, entire forest dies</p>
+                <p>• Technical monocultures: One vulnerability, system-wide compromise</p>
+                <p>• Social monocultures: One manipulation technique, mass susceptibility</p>
+            </div>
+            
+            <p style="margin: 30px 0;">This isn't about being nice. It's recognizing a <span class="emphasis">system failure</span>. An optimization function missing critical variables.</p>
+            
+            <div class="button-group">
+                <button onclick="nextScreen('final')">What now?</button>
+            </div>
+        </div>
+    -->
+        <!-- FINAL SCREEN -->
+        <div class="screen" id="screen-final">
+           
+            <h2>Three Observations for a Protocol-Saturated Future:</h2>
+            
+            <div class="ascii-border">
+                <p><strong>1. Monocultures are vulnerable by design</strong></p>
+                <p style="margin: 10px 0 20px 20px;">When one protocol dominates, a single exploit cascades everywhere. We need multiple, incompatible, overlapping protocols so that capture of one doesn't mean capture of all.</p>
+                
+                <p><strong>2. Legibility should be consensual and revocable</strong></p>
+                <p style="margin: 10px 0 20px 20px;">You should control who can read you. Selective opacity is not deception; it's boundary-making. The right to delete should be built into the protocol layer.</p>
+                
+                <p><strong>3. Protocols need expiration dates</strong></p>
+                <p style="margin: 10px 0 20px 20px;">Systems ossify. We need designed impermanence: protocols that sunset, that require active renewal, that force renegotiation of the terms.</p>
+            </div>
+            
+            <hr>
+            
+            <p style="font-size: 18px; text-align: center; margin: 30px 0;">
+                <strong>The question is: Who gets to write the rules, and who gets written out by them?</strong>
+            </p>
+            
+            <hr>
+            
+            <p style="text-align: center;">Tools like ad blockers are just the beginning. They're tactical, short-term, important, but not enough.</p>
+            
+            <p style="text-align: center;">The real work is learning to recognize systems that demand you fit a category, paths that look like freedom but lead in circles, optimization functions that don't include your survival.</p>
+            
+            <p style="text-align: center; margin: 40px 0; font-size: 18px;"><strong>Exit Protocol* aims to find alternatives.<br>Systems that leave room for what you actually are.</strong></p>
+            <p style="font-size:11px; margin: 20px 0px; text-align:center;"> *name is subject to change as the thesis progresses</p>
+            <div class="button-group">
+                <button onclick="alert('Tutorial 2: DNS & Pi-hole - Network-level blocking')">Tutorial 2: DNS & Pi-hole</button>
+                <button onclick="alert('Community tools and protocols')">Join the community</button>
+                <button onclick="alert('Sometimes the best thing to do is step away and process.')">I need a break</button>
+            </div>
+
+            <p class="small-text" style="text-align: center; margin-top: 60px;">
+                [This is a prototype toolkit website that acts as an introduction to my thesis topic.]<br>
+                [View source code for hidden messages.]
+            </p>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup">
+            <button class="popup-close fake-close" title="This won't work yet...">×</button>
+            <h2>⚠️ IMPORTANT MESSAGE FROM YOUR ISP</h2>
+            
+            <p style="margin: 15px 0;">
+                We noticed you're using ad-blocking software.
+            </p>
+            
+            <p style="margin: 15px 0;">
+                While we respect your privacy, please be aware:
+            </p>
+            
+            <ul style="margin: 15px 0 15px 30px;">
+                <li>Content creators rely on ad revenue</li>
+                <li>Ad blocking violates our Terms of Service §12.3(b)</li>
+                <li>Your browsing may be throttled as a result</li>
+            </ul>
+            
+            <p style="margin: 15px 0;">
+                Consider supporting the free internet by:
+            </p>
+            
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Disabling your ad blocker</label>
+                <label><input type="checkbox"> Subscribing to Premium (only $14.99/mo)</label>
+                <label><input type="checkbox"> Watching this 30-second message from our sponsor</label>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button onclick="darkPattern()" style="background: #e5e7eb; color: #999; cursor: not-allowed;">Remind me later</button>
+                <button onclick="alert('This one too. You have to find the real close button.')" style="background: #dc2626; color: #fff;">Accept terms</button>
+            </div>
+            
+            <p class="small-text" style="margin-top: 30px; text-align: center; color: #666;">
+                (This is a simulation. But you've seen this popup before, haven't you?)<br>
+                <button onclick="closePopup()" style="background: transparent; color: #0f0; border: 1px solid #0f0; padding: 5px 15px; font-size: 12px; margin-top: 10px;">[ Actually close this ]</button>
+            </p>
+        </div>
+    </div>
+ <script src="script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

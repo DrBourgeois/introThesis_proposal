@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #000;
+    color: rgb(224, 228, 224);
+    line-height: 1.4;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+body.phase-corporate {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    /*border: 2px solid rgb(216, 216, 216);*/
+    /*box-shadow: 0 0 20px rgba(0, 255, 0, 0.3); */
+}
+
+body.phase-corporate .container {
+    background: #fff;
+    border: 3px solid #1e40af;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.phase-corporate h1 {
+    color: #1e40af;
+    font-family: 'Georgia', serif;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin: 30px 0 20px 0;
+    font-size: 20px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.visual-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#my-spiral {
+    flex-shrink: 0;
+}
+
+#ant-mill-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-button {
+    align-self: flex-start;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.info-button:hover {
+    background: #e0e0e0;
+}
+
+/* ----------- modal stuff for the ant spirals -----------*/
+.ant-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.346);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: rgba(24, 2, 219, 0.9);
+    padding: 30px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    color: rgb(226, 226, 226);
+}
+
+.modal-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.modal-content li {
+    margin: 5px 0;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+}
+
+.close:hover {
+    color: #000;
+}
+/*-------------------- modal end ----------*/
+
+.ascii-border {
+    border: 1px solid rgb(225, 227, 225);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.ascii-desktop {
+    display: block;
+}
+
+.ascii-mobile {
+    display: none;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+button {
+    background: rgb(223, 224, 223);
+    color: #000;
+    border: 2px solid rgb(233, 233, 233);
+    padding: 12px 24px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #000;
+    color: #0f0;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.emphasis {
+    color: rgb(4, 255, 33);
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 11px;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(211, 213, 211);
+    margin: 30px 0;
+}
+
+
+/* Tracking Demo */
+.tracker-list {
+    background: rgba(0, 255, 0, 0.1);
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 3px solid #0f0;
+    font-size: 14px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.tracker-item {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tracker-item.blocked {
+    color: #f00;
+    text-decoration: line-through;
+}
+
+.status {
+    font-weight: bold;
+}
+.status.success { color: #0f0; }
+.status.blocked { color: #f00; }
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+    opacity: 0;
+}
+
+.stats.reveal {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.stat-box {
+    background: rgba(0, 255, 0, 0.1);
+    padding: 15px;
+    border: 1px solid #0f0;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0f0;
+    display: block;
+    margin: 10px 0;
+}
+
+.stat-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.progress-bar {
+    background: rgba(0, 255, 0, 0.2);
+    height: 30px;
+    border: 2px solid #0f0;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: #0f0;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size:11px;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 11px;
+    opacity: 0.6;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* corp popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+}
+
+.popup-overlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background: #fff;
+    color: #333;
+    padding: 30px;
+    max-width: 500px;
+    border: 3px solid #dc2626;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.popup h2 {
+    color: #dc2626;
+    margin-bottom: 15px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: not-allowed;
+    color: #999;
+    opacity: 0.3;
+}
+
+.popup-close:hover {
+    color: #333;
+}
+
+.fake-close {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.checkbox-group {
+    margin: 20px 0;
+}
+
+.checkbox-group label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Protocol Visualization */
+.viz-container {
+    border: 1px solid #0f0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 30px 0;
+}
+
+#protocol-canvas {
+    width: 100%;
+    height: 300px;
+    background: #000;
+    border: 1px solid #0f0;
+    position: relative;
+}
+
+.viz-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+/* legibility Slider */
+.legibility-demo {
+    background: rgba(0, 255, 0, 0.05);
+    padding: 30px;
+    margin: 30px 0;
+    border: 2px solid #0f0;
+}
+
+.slider-container {
+    margin: 30px 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    background: rgba(0, 255, 0, 0.3);
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #0f0;
+    cursor: pointer;
+}
+
+.demo-box {
+    background: #000;
+    border: 1px solid #0f0;
+    padding: 20px;
+    margin: 20px 0;
+    min-height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.demo-content {
+    transition: all 0.3s ease;
+}
+
+/* Protocol Capture Demo */
+.capture-demo {
+    margin: 30px 0;
+}
+
+.protocol-stages {
+    display: grid;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.stage {
+    background: rgba(0, 255, 0, 0.05);
+    padding: 20px;
+    border-left: 3px solid #0f0;
+    opacity: 0.3;
+    transition: all 0.5s ease;
+}
+
+.stage.active {
+    opacity: 1;
+    background: rgba(0, 255, 0, 0.1);
+}
+
+/* Monoculture Demo */
+.ecosystem-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(0, 255, 0, 0.05);
+    border: 1px solid #0f0;
+}
+
+.cell {
+    aspect-ratio: 1;
+    border: 1px solid #0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.cell.dead {
+    background: #300;
+    border-color: #f00;
+    color: #f00;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .ascii-desktop {
+        display: none;
+    }
+    
+    .ascii-mobile {
+        display: block;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .ecosystem-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
