@@ -138,6 +138,7 @@ document.querySelector('.info-button').addEventListener('click', function() {
             </ul>
             
             <p><em>You can be extremely successful in this system and still be walking in circles toward exhaustion.</em></p>
+            <br><p>This is the case in continuing traditions that do no longer serve us.</p>
         </div>
     `;
     document.body.appendChild(modal);
